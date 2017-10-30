@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-wrapper{
+position:relative;
+margin:0 auto;
+width:400px;
+}
+
+/* Main Game Frame ---------------------------------------------------------- */
+.background{
+position:absolute;
+width:400px;
+height:600px;
+background-image:url(../images/clouds.jpg);
+background-repeat:repeat-y;
+overflow:hidden;
+}
+
+.car{
+position:absolute;
+width:100px;
+height:100px;
+background-image:url(../images/batmobile.png);
+}
+
+.progess-bar-wrapper{
+position:absolute;
+height:500px;
+width:10px;
+top:75px;
+left:10px;
+background:blue;
+}
+.progess-bar{
+height:500px;
+width:10px;
+background:#231f20;
+}
+
+
+.enemy-car{
+position:absolute;
+width:100px;
+height:100px;
+background-image:url(../images/enemycar.png);
+}
+
+.invunerable{
+position:absolute;
+width:100px;
+height:100px;
+background:red;
+}
+
+.bullets{
+position:absolute;
+width:10px;
+height:10px;
+background:yellow;
+border-top-left-radius:5px;
+border-top-right-radius:5px;
+}
+
+.explosion{
+position:absolute;
+width:100px;
+height:100px;
+background-image:url(../images/explode.png);
+}
+
+.score-board{
+position:absolute;
+z-index:5;
+width:100px;
+line-height:20px;
+text-align:center;
+background:#231f20;
+color:white;
+top:10px;
+left:10px;
+border-radius:5px;
+}
+
+.nav{
+padding:50px;
+position:absolute;
+z-index:5;
+top:350px;
+left:0px;
+width:300px;
+height:100px;
+display:block;
+}
+.left-nav{
+	float:left;
+	width:100px;
+	height:100px;
+	background-image:url(../images/left-nav.png);
+
+}
+.right-nav{
+	float:left;
+	width:100px;
+	height:100px;
+	background-image:url(../images/right-nav.png);
+}
+.shoot{
+	float:left;
+	width:100px;
+	height:100px;
+	background-image:url(../images/shoot.png);
+}
+/* Game Over Frame ---------------------------------------------------------- */
+.game-over-transparent{
+position:absolute;
+padding-top:100px;
+z-index:10;
+width:400px;
+height:500px;
+background-image:url(../images/gameoverbackground.png);
+display:none;
+font-size:25px;
+color:white;
+text-align :center;
+line-height:50px;
+}
+
+.game-over-transparent span{
+width:auto;
+font-size:36px;
+text-align :center;
+color:red;
+}
+
+.score-display{
+width:auto;
+font-size:50px;
+}
+
+.feedback{
+width:auto;
+font-size:12px;
+}
+
+.share{
+margin-right:50px;
+float:right;
+width:70px;;
+}
+.share a{
+float:left;
+margin-left:5px;
+}
+.share img{
+width:25px;
+height:25px;
+}
+
+/* HomeScreen Frame ---------------------------------------------------------- */
+
+.homescreen-wrapper{
+position:absolute;
+width:400px;
+height:600px;
+background-image:url(../images/homescreen-background.jpg);
+z-index:15;
+display:block;
+}
+.homescreen-button{
+position:absolute;
+width:130px;
+height:65px;
+top:465px;
+left:135px;
+background-image:url(../images/homescreen-start.png);
+font-size:50px;
+}
