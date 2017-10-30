@@ -420,7 +420,7 @@ function keydownEventHandler(e)
 				}
 				
 				
-				if(e.keyCode == 88)
+				if(e.keyCode == 32)
 				{
 					//left
 					if(bullet_counter >= 9)
