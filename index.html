@@ -1,57 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="css/layout.css" />
-<title>2D SS game</title>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <title>2D SS game</title>
+  </head>
 
-<body>
+  <body>
+    <div class="main-wrapper">
+      <div class="homescreen-wrapper" id="homescreen">
+        <div class="homescreen-button" id="start-button"></div>
+      </div>
 
-<div class="main-wrapper">
-	<div class="homescreen-wrapper" id="homescreen">
-    	<div class="homescreen-button" id="start-button">
+      <div class="background" id="road">
+        <div class="car" id="batman-car"></div>
+        <div class="score-board" id="score"></div>
+        <div class="progess-bar-wrapper">
+          <div class="progess-bar" id="progressbar"></div>
         </div>
-    </div>
-    
-    <div class="background" id="road">
-	<div class="car" id="batman-car">
-    </div>
-    <div class="score-board" id="score">
-    </div>
-    <div class="progess-bar-wrapper">
-    	<div class="progess-bar" id="progressbar">
+
+        <div class="nav">
+          <div class="left-nav" id="lnav"></div>
+          <div class="shoot" id="shootnav"></div>
+          <div class="right-nav" id="rnav"></div>
         </div>
-    </div>
- 
-    	<div class="nav">
-            <div class="left-nav" id="lnav">
-            </div>
-            <div class="shoot" id="shootnav">
-            </div>
-            <div class="right-nav" id="rnav">
-            </div>
-         </div>
-    </div>
-    
-    <div class="game-over-transparent" id="gameover-background">
-    	<hr/>
+      </div>
+
+      <div class="game-over-transparent" id="gameover-background">
+        <hr />
         <span id="feedbackgameover"></span>
-        <hr/>
+        <hr />
         Your Score
-        <div class="score-display" id="score-display">
-        </div>
+        <div class="score-display" id="score-display"></div>
         <div class="feedback">Press Esc to return to main-menu</div>
-        <hr/>
+        <hr />
         <div class="share">
-        	<a href=""><img src="images/facebook.png"/></a>
-            <a href=""><img src="images/twitter.png"/></a>
+          <a href=""><img src="images/facebook.png"/></a>
+          <a href=""><img src="images/twitter.png"/></a>
         </div>
+      </div>
     </div>
-    
-</div>
 
-<script type="text/javascript" src="js/script.js">
-</script>
-</body>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
