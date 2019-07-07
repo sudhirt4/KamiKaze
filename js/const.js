@@ -1,0 +1,11 @@
+var ENEMY_GAP = 100;
+var WORLD_HEIGHT = 600;
+var WORLD_WIDTH = 300;
+var LANES = 3;
+var BLOCK_HEIGHT = 100;
+var BLOCK_WIDTH = Math.abs(WORLD_WIDTH / LANES);
+var ENEMY_HEALTH = 2;
+var SPEED = 5;
+var POSSIBLE_X = getPossibleX(BLOCK_WIDTH, LANES);
+var BULLET_SIZE = 10;
+var BULLET_SPEED = 10;

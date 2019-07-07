@@ -1,0 +1,95 @@
+.kamikaze {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.home-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/homescreen-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-screen__start-btn {
+  position: absolute;
+  width: 130px;
+  height: 65px;
+  top: 465px;
+  left: 135px;
+  background: url(../images/homescreen-start.png) no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
+.game-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/clouds.jpg);
+  background-repeat: repeat-y;
+  overflow: hidden;
+}
+
+.result-screen {
+  position: absolute;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/gameoverbackground.png);
+  display: none;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+.result-screen__feedback {
+  color: black;
+}
+
+.result-screen__score {
+  width: auto;
+  font-size: 50px;
+}
+
+.result-screen__game-over p {
+  font-size: 32px;
+  margin: 0;
+}
+
+.result-screen__game-over span {
+  font-size: 14px;
+}
+
+.hero {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/batmobile.png);
+}
+
+.enemy {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/enemycar.png);
+}
+
+.bullet {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: yellow;
+}
+
+.explosion {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/explode.png);
+}
